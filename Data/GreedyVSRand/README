@@ -1,1 +1,3 @@
-
+-genSynthData.py: Python code to generate synthetic SBM data
+-greedy_vs_rand_10000_stats.dict: a Python dictionary containing results of running a greedy resolving set selection algorithm and a random resolving set selection algorithm on networks with 10000 nodes
+-greedy_vs_rand_5000_stats.dict: a Python dictionary containing results of running a greedy resolving set selection algorithm and a random resolving set selection algorithm on networks with 10000 nodes
