@@ -1,0 +1,12 @@
+-genStats.py: Python code for running experiments and gathering information regarding several algorithms for finding resolving sets on graphs generated according to the SBM
+-distMatDistr.py: Python code to determine the distribution of distances in a graph through .info files generated using genSynthData.py (in RawData/)
+-extractDistTimes.py: Python code to extract the time required to generate a full distance matrix from .info files generated using genSynthData.py (in RawData/)
+-.dict.gz files: these include results of several different methods of selecting resolving sets on graphs generated according to the SBM with particular parameters. Entries include (among others)
+  -ICH adj res set: resolving sets for the graph generated using adjacency information.
+  -ICH adj time: the time required for the ICH algorithm to find resolving sets using adjacency information.
+  -ICH dist res set: resolving sets for the graph generated using full distance information.
+  -ICH dist time: the time required for the ICH algorithm to find resolving sets using full distance information.
+  -The four previous entries are also included for several other algorithms including 'greedy', 'preorder', 'random', and '0.2 algo' (0.2 is the threshold alpha value, information is included for alpha values of 0.2, 0.15, 0.1, 0.05, 0.01, and 0.005). The corresponding entry names simply replace 'ICH' with the algorithm name.
+  -distance matrix time: the time required to generate a full distance matrix for the graph using the Floyd-Warshall algorithm (empty for graphs with 10000 nodes).
+  -diameter: the diameter of the graph.
+
