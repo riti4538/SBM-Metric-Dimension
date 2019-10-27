@@ -1,0 +1,40 @@
+# .raw Files
+.raw files contain the following sections
+-#Test Stat
+  -This includes goodness of fit information based on J. Lei, A goodness-of-fit test for stochastic block models, The Annals of Statistics, 44.1 (2016): 401-424
+-#Graph Quantities
+  -The diameter of the graph
+-#Communities
+  -Line of the form: (community id): (comma seperated list of community members)
+-#Adjacency Probabilities
+  -The empirical adjacency probability matrix P
+-#Edge List
+  -A list of edges in the graph
+
+# Original Datasets
+Original datasets downloaded on 12/7/2018
+
+Word adjacencies (adjnoun.raw) - http://www-personal.umich.edu/~mejn/netdata/
+adjacency network of common adjectives and nouns in the novel David Copperfield by Charles Dickens. Please cite M. E. J. Newman, Phys. Rev. E 74, 036104 (2006).
+
+Zachary's karate club (karate.raw) - http://www-personal.umich.edu/~mejn/netdata/
+social network of friendships between 34 members of a karate club at a US university in the 1970s. Please cite W. W. Zachary, An information flow model for conflict and fission in small groups, Journal of Anthropological Research 33, 452-473 (1977).
+
+American college football (football.raw) - http://www-personal.umich.edu/~mejn/netdata/
+network of American football games between Division IA colleges during regular season Fall 2000. Please cite M. Girvan and M. E. J. Newman, Proc. Natl. Acad. Sci. USA 99, 7821-7826 (2002).
+
+Political blogs (polblogs.raw) - http://www-personal.umich.edu/~mejn/netdata/
+A directed network of hyperlinks between weblogs on US politics, recorded in 2005 by Adamic and Glance. Please cite L. A. Adamic and N. Glance, "The political blogosphere and the 2004 US Election", in Proceedings of the WWW-2005 Workshop on the Weblogging Ecosystem (2005). Thanks to Lada Adamic for permission to post these data on this web site.
+"multigraph 1" added to gml header... multiedges subsequently removed
+
+Political books (polbooks.raw) - http://www-personal.umich.edu/~mejn/netdata/
+A network of books about US politics published around the time of the 2004 presidential election and sold by the online bookseller Amazon.com. Edges between books represent frequent copurchasing of books by the same buyers. The network was compiled by V. Krebs and is unpublished, but can found on Krebs' web site. Thanks to Valdis Krebs for permission to post these data on this web site.
+
+Primary school contact network (sp_data_school_gender.raw) - http://www.sociopatterns.org/datasets/primary-school-cumulative-networks/
+The data are distributed to the public under a Creative Commons Attribution-NonCommercial-ShareAlike license. When this data is used in published research or for visualization purposes, please cite the following paper: High-Resolution Measurements of Face-to-Face Contact Patterns in a Primary School. Please also acknowledge the SocioPatterns collaboration and provide a link to http://www.sociopatterns.org.
+
+# Synthetic Data Generation
+genSynthData.py contains code to generate synthetic networks based on information in .raw files
+
+Synthetic networks with 30, 100, 500, 1000, 2000, 5000, 7000, and 10000 nodes are available on request
+
